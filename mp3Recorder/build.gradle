@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 version = "1.0.4"
 android {
-    compileSdkVersion 25
+    compileSdk 33
     buildToolsVersion "25.0.0"
     resourcePrefix "AndroidMP3RecorderLibrary_"	//这个随便填
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 25
+        minSdk 16
+        targetSdk 33
     }
 
     sourceSets.main {
@@ -24,5 +24,5 @@ android {
 
 dependencies {
     //compile 'com.android.support:support-v4:25.1.1'
-    compile 'org.greenrobot:eventbus:3.0.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
 }
